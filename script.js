@@ -72,14 +72,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const musicStatus = document.getElementById('musicStatus');
 
   const pageMap = {
-    'index.html': 'home.html',
-    'home.html': 'home.html',
-    'about.html': 'about.html',
-    'resume.html': 'resume.html',
-    'services.html': 'services.html',
-    'gallery.html': 'gallery.html',
-    'testi.html': 'testi.html'
-  };
+  'index.html': 'home.html',
+  'home.html': 'home.html',
+  'about.html': 'about.html',
+  'resume.html': 'resume.html',
+  'services.html': 'services.html',
+  'gallery.html': 'gallery.html',
+  'testi.html': 'testi.html'
+};
 
   function setActiveNav(page) {
     document.querySelectorAll('.nav-links a').forEach(link => {
