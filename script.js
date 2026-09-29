@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", () => {
     musicButton.textContent = playing ? '♫ Pause Music' : '♪ Play Music';
     musicButton.setAttribute('aria-pressed', String(playing));
     musicButton.setAttribute('aria-label', playing ? 'Pause background music' : 'Play background music');
-    musicStatus.textContent = playing ? 'Now playing: Orbiter - Noah Kahan' : 'Music is off';
+    musicStatus.textContent = playing ? 'Now playing: Alipin - Michael Pangilinan' : 'Music is off';
   }
 
   musicButton.addEventListener('click', async () => {
