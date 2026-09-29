@@ -38,27 +38,8 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
 
-    // Tell the parent how tall the current page is.
-    const resizeFrame = () => {
-      const frame = window.parent.document.getElementById('pageFrame');
-      if (frame) {
-        const height = Math.max(
-          document.body.scrollHeight,
-          document.documentElement.scrollHeight,
-          document.body.offsetHeight,
-          document.documentElement.offsetHeight
-        );
-        frame.style.height = Math.max(height + 10, 500) + 'px';
-      }
-    };
-
-    window.addEventListener('load', resizeFrame);
-    window.addEventListener('resize', resizeFrame);
-    if (window.ResizeObserver) {
-      new ResizeObserver(resizeFrame).observe(document.body);
-    }
-    setTimeout(resizeFrame, 50);
-    setTimeout(resizeFrame, 300);
+    // Keep the iframe at a stable height on GitHub Pages.
+    // The parent page already provides the iframe height.
 
     // Contact/demo form support if the page contains one.
     setupContactForm();
