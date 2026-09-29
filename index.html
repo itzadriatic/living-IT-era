@@ -3,18 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="refresh" content="0; url=home.html">
-  <title>Adrian Rom | Living in the IT Era</title>
-
-  <script>
-    window.location.replace("home.html");
-  </script>
+  <meta name="description" content="Personal website of Adrian Philippe E. Rom, a fourth-year nursing student.">
+  <title>Home | Adrian Philippe E. Rom</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+<body class="site-shell">
+<header class="site-header">
+  <nav class="navbar" aria-label="Main navigation">
+    <a class="logo" href="index.html" data-page="home.html">ADRIAN ROM</a>
+    <ul class="nav-links">
+      <li><a href="index.html" data-page="home.html">Home</a></li>
+      <li><a href="about.html" data-page="about.html">About</a></li>
+      <li><a href="resume.html" data-page="resume.html">Education</a></li>
+      <li><a href="services.html" data-page="services.html">Interests</a></li>
+      <li><a href="gallery.html" data-page="gallery.html">Gallery</a></li>
+      <li><a href="testi.html" data-page="testi.html">Reflection</a></li>
+    </ul>
+  </nav>
+</header>
 
-<body>
-  <p>Opening Adrian's personal website...</p>
-  <p>
-    <a href="home.html">Click here if the page does not open automatically.</a>
-  </p>
+<div class="music-bar" aria-label="Background music controls">
+  <audio id="backgroundMusic" loop preload="auto">
+    <source src="music/Muli (Secret Verse).mp3" type="audio/mpeg">
+  </audio>
+  <button id="musicButton" type="button" aria-label="Play background music" aria-pressed="false">♪ Play Music</button>
+  <span id="musicStatus">Music is off</span>
+</div>
+
+<main class="page-frame">
+  <iframe id="pageFrame" title="Website content" src="home.html"></iframe>
+</main>
+
+<footer class="footer">
+  <p>&copy; <span data-year></span> <strong>Adrian Philippe E. Rom</strong>. All Rights Reserved.</p>
+  <p>Personal website created for Living in the IT Era.</p>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
